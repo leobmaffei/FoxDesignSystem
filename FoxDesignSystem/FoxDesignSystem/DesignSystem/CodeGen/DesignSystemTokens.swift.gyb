@@ -1,0 +1,38 @@
+//this file was generated
+%{
+    import json
+    import glob
+
+    pathList = []
+
+    for path in glob.iglob('../Design_System_Tokens_Example.json'):
+        pathList.append(path)
+
+    jsonFile = open(pathList[0])
+    jsonData = json.load(jsonFile)
+    stringContent = ""
+
+}%
+%{
+    def createStruct(jsonContent, identation):
+        global stringContent
+        if (isinstance(jsonContent, basestring) or isinstance(jsonContent, int)) == False:
+            for key in jsonContent.keys():
+                if (str(jsonContent[key]))[0] != "{":
+
+                    if(str(jsonContent[key]).isdigit() == False ):
+                        stringContent = stringContent + identation + "let " + key + " = " + '"' + ("%s" % jsonContent[key]) + '"' + "\n"
+                    else:
+                        stringContent = stringContent + identation + "let " + key + " = " + ("%s" % jsonContent[key]) + "\n"
+
+
+                else:
+                    stringContent = stringContent + identation + "struct " + key + " {" + "\n"
+                    createStruct(jsonContent[key], (identation + "   "))
+                    stringContent = stringContent + identation + "}" + "\n"
+        return stringContent
+}%
+
+struct DesignSystem {
+${createStruct(jsonData, "   ")}
+}
