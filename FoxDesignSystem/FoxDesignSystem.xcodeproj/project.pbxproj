@@ -15,7 +15,7 @@
 		12B3FA8F26FD26AC000B8B0A /* generateTagFiles.sh in Resources */ = {isa = PBXBuildFile; fileRef = 12B3FA8E26FD26AB000B8B0A /* generateTagFiles.sh */; };
 		12B3FA9326FD2957000B8B0A /* DesignSystemTokens.swift.gyb in Resources */ = {isa = PBXBuildFile; fileRef = 12B3FA9226FD2957000B8B0A /* DesignSystemTokens.swift.gyb */; };
 		12B3FA9526FD29D8000B8B0A /* DesignSystemTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3FA9426FD29D8000B8B0A /* DesignSystemTokens.swift */; };
-		12B3FA9826FD2C8B000B8B0A /* Design_System_Tokens_Example.json in Resources */ = {isa = PBXBuildFile; fileRef = 12B3FA9726FD2C8B000B8B0A /* Design_System_Tokens_Example.json */; };
+		12B3FA9826FD2C8B000B8B0A /* Design_System_Tokens.json in Resources */ = {isa = PBXBuildFile; fileRef = 12B3FA9726FD2C8B000B8B0A /* Design_System_Tokens.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,7 @@
 		12B3FA8E26FD26AB000B8B0A /* generateTagFiles.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = generateTagFiles.sh; sourceTree = "<group>"; };
 		12B3FA9226FD2957000B8B0A /* DesignSystemTokens.swift.gyb */ = {isa = PBXFileReference; lastKnownFileType = text; path = DesignSystemTokens.swift.gyb; sourceTree = "<group>"; };
 		12B3FA9426FD29D8000B8B0A /* DesignSystemTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemTokens.swift; sourceTree = "<group>"; };
-		12B3FA9726FD2C8B000B8B0A /* Design_System_Tokens_Example.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Design_System_Tokens_Example.json; sourceTree = "<group>"; };
+		12B3FA9726FD2C8B000B8B0A /* Design_System_Tokens.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Design_System_Tokens.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +65,7 @@
 		12B3FA6526FD1832000B8B0A = {
 			isa = PBXGroup;
 			children = (
+				12B3FA9726FD2C8B000B8B0A /* Design_System_Tokens.json */,
 				12B3FA7126FD1832000B8B0A /* FoxDesignSystem */,
 				12B3FA7C26FD1832000B8B0A /* FoxDesignSystemTests */,
 				12B3FA7026FD1832000B8B0A /* Products */,
@@ -114,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				12B3FA9126FD2939000B8B0A /* CodeGen */,
-				12B3FA9726FD2C8B000B8B0A /* Design_System_Tokens_Example.json */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -223,7 +223,7 @@
 			files = (
 				12B3FA8C26FD2621000B8B0A /* gyb in Resources */,
 				12B3FA8F26FD26AC000B8B0A /* generateTagFiles.sh in Resources */,
-				12B3FA9826FD2C8B000B8B0A /* Design_System_Tokens_Example.json in Resources */,
+				12B3FA9826FD2C8B000B8B0A /* Design_System_Tokens.json in Resources */,
 				12B3FA9326FD2957000B8B0A /* DesignSystemTokens.swift.gyb in Resources */,
 				12B3FA8D26FD2621000B8B0A /* gyb.py in Resources */,
 			);
