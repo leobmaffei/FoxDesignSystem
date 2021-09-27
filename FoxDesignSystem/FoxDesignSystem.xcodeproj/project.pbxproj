@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12B3FA7926FD1832000B8B0A /* FoxDesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B3FA6F26FD1832000B8B0A /* FoxDesignSystem.framework */; };
 		12B3FA8026FD1832000B8B0A /* FoxDesignSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B3FA7226FD1832000B8B0A /* FoxDesignSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12B3FA8C26FD2621000B8B0A /* gyb in Resources */ = {isa = PBXBuildFile; fileRef = 12B3FA8A26FD2621000B8B0A /* gyb */; };
 		12B3FA8D26FD2621000B8B0A /* gyb.py in Resources */ = {isa = PBXBuildFile; fileRef = 12B3FA8B26FD2621000B8B0A /* gyb.py */; };
@@ -17,21 +16,10 @@
 		12B3FA9826FD2C8B000B8B0A /* Design_System_Tokens_Example.json in Resources */ = {isa = PBXBuildFile; fileRef = 12B3FA9726FD2C8B000B8B0A /* Design_System_Tokens_Example.json */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		12B3FA7A26FD1832000B8B0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 12B3FA6626FD1832000B8B0A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 12B3FA6E26FD1832000B8B0A;
-			remoteInfo = FoxDesignSystem;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		12B3FA6F26FD1832000B8B0A /* FoxDesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoxDesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B3FA7226FD1832000B8B0A /* FoxDesignSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoxDesignSystem.h; sourceTree = "<group>"; };
 		12B3FA7326FD1832000B8B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12B3FA7826FD1832000B8B0A /* FoxDesignSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoxDesignSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B3FA8A26FD2621000B8B0A /* gyb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gyb; sourceTree = "<group>"; };
 		12B3FA8B26FD2621000B8B0A /* gyb.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gyb.py; sourceTree = "<group>"; };
 		12B3FA8E26FD26AB000B8B0A /* generateTagFiles.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = generateTagFiles.sh; sourceTree = "<group>"; };
@@ -45,14 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		12B3FA7526FD1832000B8B0A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				12B3FA7926FD1832000B8B0A /* FoxDesignSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				12B3FA6F26FD1832000B8B0A /* FoxDesignSystem.framework */,
-				12B3FA7826FD1832000B8B0A /* FoxDesignSystemTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,24 +127,6 @@
 			productReference = 12B3FA6F26FD1832000B8B0A /* FoxDesignSystem.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		12B3FA7726FD1832000B8B0A /* FoxDesignSystemTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 12B3FA8626FD1832000B8B0A /* Build configuration list for PBXNativeTarget "FoxDesignSystemTests" */;
-			buildPhases = (
-				12B3FA7426FD1832000B8B0A /* Sources */,
-				12B3FA7526FD1832000B8B0A /* Frameworks */,
-				12B3FA7626FD1832000B8B0A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				12B3FA7B26FD1832000B8B0A /* PBXTargetDependency */,
-			);
-			name = FoxDesignSystemTests;
-			productName = FoxDesignSystemTests;
-			productReference = 12B3FA7826FD1832000B8B0A /* FoxDesignSystemTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -178,9 +139,6 @@
 					12B3FA6E26FD1832000B8B0A = {
 						CreatedOnToolsVersion = 12.5.1;
 						LastSwiftMigration = 1250;
-					};
-					12B3FA7726FD1832000B8B0A = {
-						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
@@ -198,7 +156,6 @@
 			projectRoot = "";
 			targets = (
 				12B3FA6E26FD1832000B8B0A /* FoxDesignSystem */,
-				12B3FA7726FD1832000B8B0A /* FoxDesignSystemTests */,
 			);
 		};
 /* End PBXProject section */
@@ -213,13 +170,6 @@
 				12B3FA9826FD2C8B000B8B0A /* Design_System_Tokens_Example.json in Resources */,
 				12B3FA9326FD2957000B8B0A /* DesignSystemTokens.swift.gyb in Resources */,
 				12B3FA8D26FD2621000B8B0A /* gyb.py in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		12B3FA7626FD1832000B8B0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,22 +208,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		12B3FA7426FD1832000B8B0A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		12B3FA7B26FD1832000B8B0A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 12B3FA6E26FD1832000B8B0A /* FoxDesignSystem */;
-			targetProxy = 12B3FA7A26FD1832000B8B0A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		12B3FA8126FD1832000B8B0A /* Debug */ = {
@@ -451,42 +386,6 @@
 			};
 			name = Release;
 		};
-		12B3FA8726FD1832000B8B0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FoxDesignSystemTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = maffei.library.FoxDesignSystemTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		12B3FA8826FD1832000B8B0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FoxDesignSystemTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = maffei.library.FoxDesignSystemTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -504,15 +403,6 @@
 			buildConfigurations = (
 				12B3FA8426FD1832000B8B0A /* Debug */,
 				12B3FA8526FD1832000B8B0A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		12B3FA8626FD1832000B8B0A /* Build configuration list for PBXNativeTarget "FoxDesignSystemTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				12B3FA8726FD1832000B8B0A /* Debug */,
-				12B3FA8826FD1832000B8B0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
