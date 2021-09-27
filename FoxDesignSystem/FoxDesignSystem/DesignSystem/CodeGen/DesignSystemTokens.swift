@@ -48,12 +48,12 @@ struct DesignSystem {
       }
    }
    struct spacing {
-      let tight = 20
-      let relaxed = 100
-      let confortable = 80
-      let cozy = 60
-      let comopact = 40
-   }
+    let tight = 20
+    let relaxed = 100
+    let confortable = 80
+    let cozy = 60
+    let comopact = 40
+ }
 
 }
 
