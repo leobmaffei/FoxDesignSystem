@@ -5,7 +5,11 @@
         "medium": "Gill Sans-Medium",
         "heavy": "Gill Sans-Bold"
     },
-    "size": {}
+    "size": {
+        "s": 12,
+        "m": 24,
+        "l": 32
+    }
   },
   "color": {
     "primary": {

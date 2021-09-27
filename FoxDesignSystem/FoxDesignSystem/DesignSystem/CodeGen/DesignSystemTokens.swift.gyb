@@ -1,4 +1,6 @@
 //this file was generated
+
+import UIKit
 %{
     import json
     import glob
@@ -19,9 +21,11 @@
         if (isinstance(jsonContent, basestring) or isinstance(jsonContent, int)) == False:
             for key in jsonContent.keys():
                 if (str(jsonContent[key]))[0] != "{":
-
                     if(str(jsonContent[key]).isdigit() == False ):
-                        stringContent = stringContent + identation + "let " + key + " = " + '"' + ("%s" % jsonContent[key]) + '"' + "\n"
+                        if(str(jsonContent[key])[0] == "#"):
+                            stringContent = stringContent + identation + "let " + key + " = " + '"' + ("%s" % jsonContent[key]) + '"' + ".hexStringToUIColor()" + "\n"
+                        else:
+                            stringContent = stringContent + identation + "let " + key + " = " + '"' + ("%s" % jsonContent[key]) + '"' + "\n"
                     else:
                         stringContent = stringContent + identation + "let " + key + " = " + ("%s" % jsonContent[key]) + "\n"
 
@@ -35,4 +39,28 @@
 
 struct DesignSystem {
 ${createStruct(jsonData, "   ")}
+}
+
+extension String {
+    func hexStringToUIColor() -> UIColor {
+        var cString:String = self.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+
+        if ((cString.count) != 6) {
+            return UIColor.gray
+        }
+
+        var rgbValue:UInt64 = 0
+        Scanner(string: cString).scanHexInt64(&rgbValue)
+
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
 }
