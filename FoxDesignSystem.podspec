@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "FoxDesignSystem"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "Fox Design System Code Gen"
 
   spec.description  = <<-DESC
