@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "FoxDesignSystem"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.3"
   spec.summary      = "Fox Design System Code Gen"
 
   spec.description  = <<-DESC
@@ -21,7 +21,7 @@ Fox Design System use a gym python script to auto generate design tokens from fo
 
   spec.source       = { :git => "https://github.com/leobmaffei/FoxDesignSystem.git", :tag => "#{spec.version}" }
 
-  spec.source_files  = "FoxDesignSystem/**/*.{h,m,swift}"
+  spec.source_files  = "FoxDesignSystem/**/*.{h,m,swift,json,gyb}"
 
 
 end
