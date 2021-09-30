@@ -40,10 +40,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1203042727062D5200C1E513 /* DesignSystemContent */ = {
+			isa = PBXGroup;
+			children = (
+				12B3FA9226FD2957000B8B0A /* DesignSystemTokens.swift.gyb */,
+			);
+			path = DesignSystemContent;
+			sourceTree = "<group>";
+		};
 		12B3FA6526FD1832000B8B0A = {
 			isa = PBXGroup;
 			children = (
+				1203042727062D5200C1E513 /* DesignSystemContent */,
 				12B3FA9726FD2C8B000B8B0A /* Design_System_Tokens_Example.json */,
+				12B3FA8E26FD26AB000B8B0A /* generateTagFiles.sh */,
+				12B3FA8A26FD2621000B8B0A /* gyb */,
+				12D92BBC270293F600DFE87A /* gyb.pyc */,
+				12B3FA8B26FD2621000B8B0A /* gyb.py */,
+				12B3FA9426FD29D8000B8B0A /* DesignSystemTokens.swift */,
 				12B3FA7126FD1832000B8B0A /* FoxDesignSystem */,
 				12B3FA7026FD1832000B8B0A /* Products */,
 			);
@@ -60,40 +74,10 @@
 		12B3FA7126FD1832000B8B0A /* FoxDesignSystem */ = {
 			isa = PBXGroup;
 			children = (
-				12B3FA9026FD2922000B8B0A /* DesignSystem */,
-				12B3FA8926FD24EA000B8B0A /* Scripts */,
 				12B3FA7226FD1832000B8B0A /* FoxDesignSystem.h */,
 				12B3FA7326FD1832000B8B0A /* Info.plist */,
 			);
 			path = FoxDesignSystem;
-			sourceTree = "<group>";
-		};
-		12B3FA8926FD24EA000B8B0A /* Scripts */ = {
-			isa = PBXGroup;
-			children = (
-				12B3FA8E26FD26AB000B8B0A /* generateTagFiles.sh */,
-				12B3FA8A26FD2621000B8B0A /* gyb */,
-				12D92BBC270293F600DFE87A /* gyb.pyc */,
-				12B3FA8B26FD2621000B8B0A /* gyb.py */,
-			);
-			path = Scripts;
-			sourceTree = "<group>";
-		};
-		12B3FA9026FD2922000B8B0A /* DesignSystem */ = {
-			isa = PBXGroup;
-			children = (
-				12B3FA9126FD2939000B8B0A /* CodeGen */,
-			);
-			path = DesignSystem;
-			sourceTree = "<group>";
-		};
-		12B3FA9126FD2939000B8B0A /* CodeGen */ = {
-			isa = PBXGroup;
-			children = (
-				12B3FA9226FD2957000B8B0A /* DesignSystemTokens.swift.gyb */,
-				12B3FA9426FD29D8000B8B0A /* DesignSystemTokens.swift */,
-			);
-			path = CodeGen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +181,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PROJECT_DIR}/FoxDesignSystem/Scripts/generateTagFiles.sh\n";
+			shellScript = "${PROJECT_DIR}/generateTagFiles.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -10,11 +10,15 @@ import UIKit
     for path in glob.iglob('../../../../*/Design_System_Tokens.json'):
         pathList.append(path)
 
-    jsonFile = open(pathList[0])
-    jsonData = json.load(jsonFile)
     stringContent = ""
 
 }%
+%   if(len(pathList) == 0):
+        //No files founded
+%   else:
+%       jsonFile = open(pathList[0])
+%       jsonData = json.load(jsonFile)
+
 %{
     def createStruct(jsonContent, identation):
         global stringContent

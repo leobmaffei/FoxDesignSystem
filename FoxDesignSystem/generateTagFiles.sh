@@ -1,3 +1,5 @@
+mkdir -p DesignSystem &&
+cat ${PROJECT_DIR}/DesignSystemContent/DesignSystemTokens.swift.gyb > DesignSystem/DesignSystemTokens.swift.gyb &&
 for INFILE in ${!SCRIPT_INPUT_FILE_*};
 do
     file=${!INFILE}
