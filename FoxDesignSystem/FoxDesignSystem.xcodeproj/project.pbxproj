@@ -40,18 +40,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1203042727062D5200C1E513 /* DesignSystemContent */ = {
-			isa = PBXGroup;
-			children = (
-				12B3FA9226FD2957000B8B0A /* DesignSystemTokens.swift.gyb */,
-			);
-			path = DesignSystemContent;
-			sourceTree = "<group>";
-		};
 		12B3FA6526FD1832000B8B0A = {
 			isa = PBXGroup;
 			children = (
-				1203042727062D5200C1E513 /* DesignSystemContent */,
+				12B3FA9226FD2957000B8B0A /* DesignSystemTokens.swift.gyb */,
 				12B3FA9726FD2C8B000B8B0A /* Design_System_Tokens_Example.json */,
 				12B3FA8E26FD26AB000B8B0A /* generateTagFiles.sh */,
 				12B3FA8A26FD2621000B8B0A /* gyb */,
