@@ -23,4 +23,8 @@
 - Build your project, your <code>DesignSystemTokens.swift</code> file will be updated with the JSON values.
 ### Usage
 - Use the tokens by acessing the struct <code>'DesignSystem.yourFamilyToken'</code> any place in your project. Any time witch you json file will be changed, you DesignSystemTokens will be automaticaly updated.
+### SwiftUI
+- If you're having custom Run Script Phases in Build Phases and you don't want (or can't) remove them, then try to check checkbox "Run script only when installing".
+
+
 
