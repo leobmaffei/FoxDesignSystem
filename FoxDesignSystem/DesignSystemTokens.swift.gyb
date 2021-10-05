@@ -7,14 +7,16 @@ import UIKit
 
     pathList = []
 
-    for path in glob.iglob('../../../../*/Design_System_Tokens.json'):
+    for path in glob.iglob('../../*/Design_System_Tokens.json'):
         pathList.append(path)
 
     stringContent = ""
 
 }%
 %   if(len(pathList) == 0):
-        //No files founded
+struct DesignSystem {
+    //No Design_System_Tokens.json files found
+}
 %   else:
 %       jsonFile = open(pathList[0])
 %       jsonData = json.load(jsonFile)
