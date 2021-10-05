@@ -19,7 +19,7 @@
 - Build your project. Your project shold not have any erros.
 - Inside your project folder, check if was created a folder called <code>DesignSystem</code>
 - Drag the DesignSystem folder into your project and uncheck Copy items if needed
-- Create a JSON file called <code>'Design_System_Tokens.json'</code> with your design system in the root of your project. You can check an example of the json here:
+- Create a JSON file called <code>'Design_System_Tokens.json'</code> with your design system in the root of your project. You can check an example of the json here: https://github.com/leobmaffei/FoxDesignSystem/blob/main/FoxDesignSystem/Design_System_Tokens_Example.json
 - Build your project, your <code>DesignSystemTokens.swift</code> file will be updated with the JSON values.
 ### Usage
 - Use the tokens by acessing the struct <code>'DesignSystem.yourFamilyToken'</code> any place in your project. Any time witch you json file will be changed, you DesignSystemTokens will be automaticaly updated.
