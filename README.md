@@ -13,7 +13,16 @@
 - On your Build Phases click in the plus("+") button
 - Select New Run Script (you can rename it, to easier identification)
 - Your run script needs to be right before "Compile Sources" otherwise you get the error
+#### If Using UIKit
 - Insert the Code: <code>${PODS_ROOT}/FoxDesignSystem/FoxDesignSystem/generateTagFiles.sh</code>
+#### If Using SwiftUI
+- Insert the Code:
+> if [ $ENABLE_PREVIEWS == "NO" ]<br/>
+then<br/>
+     ${PODS_ROOT}/FoxDesignSystem/FoxDesignSystem/generateTagFiles.sh<br/>
+else<br/>
+     echo "Skipping the script because of preview mode"<br/>
+fi
 - Inside Input Files add the path: <code>${PROJECT_DIR}/DesignSystem/DesignSystemTokens.swift.gyb</code>
 - Insite Output Files add the path: <code>${PROJECT_DIR}/DesignSystem/DesignSystemTokens.swift</code>
 - Build your project. Your project shold not have any erros.
@@ -24,7 +33,7 @@
 ### Usage
 - Use the tokens by acessing the struct <code>'DesignSystem.yourFamilyToken'</code> any place in your project. Any time witch you json file will be changed, you DesignSystemTokens will be automaticaly updated.
 ### SwiftUI
-- If you're having custom Run Script Phases in Build Phases and you don't want (or can't) remove them, then try to check checkbox "Run script only when installing".
+- Embed all the content of your script in an if statement that check if we're using the preview or not. If we're in preview, then don't run the content of your script, otherwise, let's run it. And you don't have to sacrifice your script for release versions only.
 
 
 
